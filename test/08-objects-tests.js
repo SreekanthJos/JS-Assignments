@@ -87,7 +87,8 @@ describe('08-objects-tasks', function() {
             }
         ].forEach(data => {
             var actual = tasks.fromJSON(data.proto, data.json);
-            
+            console.log(actual);
+            console.log(data.expected);
                assert.deepEqual(
                 actual,
                 data.expected,
